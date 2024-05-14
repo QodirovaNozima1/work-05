@@ -1,0 +1,156 @@
+@font-face {
+  font-family:nozima;
+  src: url(../font/Philosopher-Regular.woff);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1336px;
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+a{
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+  background: rgba(255, 255, 255, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .nav__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+
+      .nav__collection {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        font-family: nozima;
+        gap: 30px;
+        &:hover {
+          cursor: pointer;
+          color: blueviolet;
+        }
+      }
+      .nav__sellect {
+        border: 1px solid gray;
+        background: transparent;
+        border-radius: 5px;
+        padding: 5px 10px;
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+.box {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px auto;
+  padding: 40px;
+  width: 500px;
+  background: white;
+  box-shadow: 1px 1px 20px 1px rgb(240, 236, 236);
+  border-radius: 10px;
+  gap: 10px;
+  .box p{
+    font-family: nozima;
+  }
+   form{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+         .name__box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .name {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      input {
+        width: 100%;
+        height: 48px;
+        border-radius: 6px;
+        padding: 10px;
+        outline: none;
+        border: 1px solid rgba(217, 217, 217, 1);
+        font-family: nozima;
+      }
+    }
+  }
+  .data {
+    width: 100%;
+    border-radius: 6px;
+  }
+  .gender {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .radio {
+      width: 200px;
+      padding: 5px;
+      display: flex;
+      border-radius: 6px;
+      gap: 5px;
+      flex-direction: column;
+    }
+  }
+  .wrapper{
+  width: 100%;
+  position: relative;
+  .sky__pro {
+    width: 100%;
+    height: 48px;
+    border-radius: 6px;
+    outline: none;
+    padding-left: 10px;
+    border: 1px solid rgba(217, 217, 217, 1);
+    font-family: nozima;
+  }
+  }
+  .submit{ 
+    margin-top: 50px;
+    width: 100%;
+    height: 48px;
+    border-radius: 6px;
+    background:#01BAB3;
+    color: white;
+    border: none;
+    font-size: 18px;
+    transition: 1.1s;
+    &:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    background:violet;
+   }
+  }
+  }
+  
+}
